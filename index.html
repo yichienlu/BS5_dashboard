@@ -14,9 +14,9 @@
     <div class="d-flex">
         <aside class="sidebar vh-100 border-end pt-3 d-flex bg-white flex-column">
             <!-- 後臺名稱 -->
-            <div class="px-4">
+            <h1 class="px-4 fs-4">
                 <strong>六角西餐廳</strong>-後台管理
-            </div>
+            </h1>
             <!-- 選單 -->
             <div class="overflow-auto mt-3">
                 <div>
@@ -35,14 +35,18 @@
                             <i class="bi bi-caret-down"></i>
                         </div>
                     </a>
-                    <div class="collapse" id="menu-order">
-                        <a href="orders.html" class="sidebar-link">
-                            <div class="ps-5">訂單列表</div>
-                        </a>
-                        <a href="order.html" class="sidebar-link">
-                            <div class="ps-5">訂單細節</div>
-                        </a>
-                    </div>
+                    <ul class="collapse list-unstyled" id="menu-order">
+                        <li>
+                            <a href="orders.html" class="d-block sidebar-link ps-5">
+                                訂單列表
+                            </a>
+                        </li>
+                        <li>
+                            <a href="order.html" class="d-block sidebar-link ps-5">
+                                訂單細節
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <a href="#" class="sidebar-link">
@@ -53,8 +57,8 @@
                 </div>
             </div>
             <!-- 登出按鈕 -->
-            <a href="#" class="mt-auto sidebar-link active">
-                <div class="px-4">登出</div>
+            <a href="#" class="mt-auto sidebar-link active px-4">
+                登出
             </a>
         </aside>
         <main class="main">
@@ -68,26 +72,26 @@
             <div class="p-4">
 
                 <!-- 數據 -->
-                <div class="row row-cols-lg-3 g-4 mb-4">
-                    <div class="col">
+                <ul class="list-unstyled row row-cols-lg-3 g-4 mb-4">
+                    <li class="col">
                         <div class="card shadow-sm h-100">
-                            <div class="card-body text-end d-flex flex-column">
+                            <div class="card-body text-end">
                                 <h2 class="display-6">在線人數</h2>
                                 <p class="display-4 mb-0 mt-auto">3,123</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
+                    </li>
+                    <li class="col">
                         <div class="card shadow-sm h-100">
-                            <div class="card-body text-end d-flex flex-column">
+                            <div class="card-body text-end">
                                 <h2 class="display-6">訂單數</h2>
                                 <p class="display-4 mb-0 mt-auto">1,092</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
+                    </li>
+                    <li class="col">
                         <div class="card shadow-sm h-100">
-                            <div class="card-body text-end d-flex flex-column">
+                            <div class="card-body text-end">
                                 <h2 class="display-6">營業額</h2>
                                 <p class="mb-0 text-success mb-0 mt-auto">
                                     <span class="fs-3">NT$</span>
@@ -95,8 +99,8 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
 
                 <!-- 圖表 -->
                 <div class="row g-4 mb-4">
@@ -143,17 +147,18 @@
                                         <td scope="row" class="ps-4">TX123456789</td>
                                         <td>ab1234@email.com</td>
                                         <td>
-                                          卡小伯
+                                            卡小伯
                                         </td>
                                         <td>六角西餐：大麥克全家餐</td>
-                                        <td><div class="text-danger">尚未付款</div></td>
+                                        <td>
+                                            <div class="text-danger">尚未付款</div>
+                                        </td>
                                         <td class="text-end">900</td>
                                         <td class="text-end pe-4">
-                                          <a href="#"
-                                            class="btn btn-sm btn-outline-dark me-2">
-                                            編輯 <i class="bi bi-pen"></i></a>
+                                            <a href="#" class="btn btn-sm btn-outline-dark me-2">
+                                                編輯 <i class="bi bi-pen"></i></a>
                                         </td>
-                                      </tr>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -161,18 +166,18 @@
                     <div class="card-footer bg-transparent py-3">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-center mb-0">
-                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                              <li class="page-item"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
                             </ul>
-                          </nav>
+                        </nav>
                     </div>
                 </div>
             </div>
 
-            
+
             <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
             <script>
                 (() => {
